@@ -1,15 +1,40 @@
-# Fine-Tuning LLaMA 2 on a Custom Dataset
+# Fine-Tune Llama 2
 
-This repository provides a Jupyter Notebook that demonstrates how to fine-tune the LLaMA 2 model on a custom dataset. The notebook utilizes Hugging Face's `transformers` library, along with PyTorch, to fine-tune the model for a specific task.
+This project demonstrates the process of fine-tuning the [Llama 2](https://huggingface.co/meta-llama) language model to adapt it for specific tasks. The repository includes a Jupyter Notebook (`Fine_tune_Llama_2.ipynb`) that guides you through the fine-tuning process step by step.
 
-## Prerequisites
+## Table of Contents
 
-Before you begin, ensure that you have the following dependencies installed:
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-- Python 3.7 or higher
-- `pip` for managing Python packages
+## Overview
 
-### Required Libraries
+Llama 2 is a state-of-the-art language model by Meta, designed to handle a wide range of natural language processing tasks. This project focuses on fine-tuning the model using custom datasets to enhance its performance on domain-specific tasks.
 
-```bash
-pip install torch transformers datasets accelerate
+The notebook covers:
+- Preprocessing the dataset for training.
+- Loading and configuring the Llama 2 model.
+- Fine-tuning the model using supervised learning.
+- Evaluating the model's performance on a test set.
+
+## Requirements
+
+Before running the notebook, ensure you have the following installed:
+
+- Python 3.8 or later
+- Jupyter Notebook or JupyterLab
+- [PyTorch](https://pytorch.org/) (with GPU support recommended)
+- Hugging Face's Transformers library
+- Additional dependencies listed in `requirements.txt` (if provided)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Fine_tune_Llama_2.git
+   cd Fine_tune_Llama_2
